@@ -1,5 +1,13 @@
 blocks:
     template:
+        icon: bundles/ezsystemslandingpageblocktemplate/images/templateblock.svg
+        attributes:
+            templateContent:
+                display_name: Content
+                type: text
+                validation:
+                    regex: /[^\\s]/
+                    message: 'Sample content'
         views:
             basic:
                 template: EzSystemsLandingPageBlockTemplateBundle::template.html.twig
