@@ -9,6 +9,6 @@ blocks:
                     regex: /[^\\s]/
                     message: 'Sample content'
         views:
-            basic:
+            default:
                 template: EzSystemsLandingPageBlockTemplateBundle::template.html.twig
                 name: Basic Template Block view
