@@ -1,13 +1,15 @@
 blocks:
     template:
+        name: Fancy block name
         icon: bundles/ezsystemslandingpageblocktemplate/images/templateblock.svg
+        available: true
         attributes:
             templateContent:
-                display_name: Content
+                name: Content
                 type: text
-                validation:
-                    regex: /[^\\s]/
-                    message: 'Sample content'
+                regex: /[^\s]/
+                regexErrorMessage: 'No whitespaces allowed'
+            test: string
         views:
             default:
                 template: EzSystemsLandingPageBlockTemplateBundle::template.html.twig
