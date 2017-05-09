@@ -1,20 +1,20 @@
-#EzLandingPageBlockTemplateBundle#
+# EzLandingPageBlockTemplateBundle
 
 EzLandingPageBlockTemplateBundle contains template for new blocks for EzLandingPageFieldTypeBundle - powerful mechanism for creating dynamic landing pages in [eZ Studio](http://ezstudio.com) by [eZ Systems](http://ez.no)
 
----
+Keep in mind this isn't any valuable, working block type. It only shows 2 examples how you can:
+* create simple block solely with YAML with some syntax shortcuts (`More Fancy` example)
+* create new block type in YAML with an additional service allowing business logic implementation (`Fancy` example)
+  
 
-## USAGE ##
+## Usage ##
 
 1. Clone this repository
 2. Enable it in `AppKernel.php` *(by adding a new element inside the `registerBundles()` method)*
 ```php 
 new \EzSystems\LandingPageBlockTemplateBundle\EzSystemsLandingPageBlockTemplateBundle()
 ```
-
-### That's all :) ###
-
----
+3. You can play with the blocks using knowledge from [the official documentation](https://doc.ez.no/pages/viewpage.action?pageId=34079831).
 
 #### credits 
 
