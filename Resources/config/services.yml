@@ -1,5 +1,7 @@
 services:
-    ez_systems.landing_page.block.template:
-        class: EzSystems\LandingPageBlockTemplateBundle\Block\TemplateBlock
+    ez_systems.landing_page.block.fancy:
+        class: EzSystems\LandingPageBlockTemplateBundle\Block\FancyBlock
         tags:
-            - { name: landing_page_field_type.block_type, alias: template }
+            - { name: landing_page_field_type.block_type, alias: fancy }
+        arguments:
+            - '@ezpublish.landing_page.block_definition_factory'

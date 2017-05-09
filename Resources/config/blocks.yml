@@ -1,16 +1,22 @@
 blocks:
-    template:
-        name: Fancy block name
-        icon: bundles/ezsystemslandingpageblocktemplate/images/templateblock.svg
-        available: true
+    fancy:
+        name: Fancy
+        thumbnail: bundles/ezsystemslandingpageblocktemplate/images/templateblock.svg
         attributes:
-            templateContent:
-                name: Content
-                type: text
-                regex: /[^\s]/
-                regexErrorMessage: 'No whitespaces allowed'
-            test: string
+            age:
+                name: Age
+                type: integer
+                regex: /[0-9]+/
+                regexErrorMessage: 'Provide a number'
+            name: string
         views:
             default:
-                template: EzSystemsLandingPageBlockTemplateBundle::template.html.twig
+                template: EzSystemsLandingPageBlockTemplateBundle::fancy_block.html.twig
                 name: Basic Template Block view
+    more_fancy:
+        initialize: true
+        thumbnail: bundles/ezsystemslandingpageblocktemplate/images/templateblock.svg
+        attributes:
+            age: integer
+            name: string
+        views: EzSystemsLandingPageBlockTemplateBundle::more_fancy_block.html.twig

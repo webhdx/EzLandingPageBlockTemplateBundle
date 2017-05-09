@@ -1,5 +1,4 @@
 <?php
-
 namespace EzSystems\LandingPageBlockTemplateBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
